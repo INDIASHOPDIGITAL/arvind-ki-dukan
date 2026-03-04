@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arvind Ki Dukan</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet">
+
+<style>
+body{
+margin:0;
+font-family:'Poppins',sans-serif;
+background:linear-gradient(135deg,#000,#1c1c1c);
+color:white;
+scroll-behavior:smooth;
+}
+
+nav{
+position:fixed;
+width:100%;
+background:black;
+padding:15px;
+text-align:center;
+z-index:1000;
+}
+
+nav a{
+color:gold;
+margin:0 20px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.section{
+padding:100px 20px;
+text-align:center;
+}
+
+.section h2{
+color:gold;
+margin-bottom:30px;
+font-size:35px;
+}
+
+.hero{
+height:100vh;
+background:url('shop.jpg') center/cover no-repeat;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+text-align:center;
+}
+
+.hero img{
+width:220px;
+margin-bottom:20px;
+}
+
+.hero h1{
+font-size:50px;
+color:gold;
+text-shadow:0 0 20px gold;
+}
+
+.cards{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:30px;
+}
+
+.card{
+width:280px;
+border-radius:15px;
+overflow:hidden;
+background:#111;
+transition:0.4s;
+cursor:pointer;
+}
+
+.card img{
+width:100%;
+height:350px;
+object-fit:cover;
+}
+
+.card:hover{
+transform:scale(1.08);
+box-shadow:0 0 20px gold;
+}
+
+.payment-box{
+background:#111;
+padding:30px;
+border-radius:15px;
+max-width:600px;
+margin:auto;
+}
+
+.payment-box img{
+width:200px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.payment-box img:hover{
+transform:scale(1.1);
+}
+
+footer{
+background:black;
+padding:30px;
+text-align:center;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+padding:15px 20px;
+border-radius:50px;
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#products">Products</a>
+<a href="#payment">Payment</a>
+<a href="#location">Location</a>
+</nav>
+
+<!-- HOME -->
+<div class="hero" id="home">
+<img src="logo.png">
+<h1>ARVIND KI DUKAN</h1>
+<p>Premium | Genuine | High Endurance | Excellent Fabric</p>
+</div>
+
+<!-- PRODUCTS -->
+<div class="section" id="products">
+<h2>Our Collections</h2>
+<div class="cards">
+<div class="card">
+<img src="plain.png">
+</div>
+
+<div class="card">
+<img src="printed.png">
+</div>
+
+<div class="card">
+<img src="pants.png">
+</div>
+</div>
+</div>
+
+<!-- PAYMENT -->
+<div class="section" id="payment">
+<h2>Secure Payment</h2>
+<div class="payment-box">
+<p><strong>UPI ID:</strong> 9922645580@ybl</p>
+<p>Click QR below to pay</p>
+
+<a href="upi://pay?pa=9922645580@ybl&pn=Arvind%20Ki%20Dukan&cu=INR">
+<img src="upi.png">
+</a>
+
+<p>After payment, send screenshot on WhatsApp.</p>
+</div>
+</div>
+
+<!-- LOCATION -->
+<div class="section" id="location">
+<h2>Visit Our Store</h2>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3732.0630238456324!2d76.99845508750072!3d20.70766521737108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd731d1b1955fab%3A0xdc76d6d9df395746!2sMahaveer%20collection!5e0!3m2!1sen!2sin!4v1772561410890!5m2!1sen!2sin" 
+width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy">
+</iframe>
+
+</div>
+
+<footer>
+© 2026 Arvind Ki Dukan | All Rights Reserved
+</footer>
+
+<a class="whatsapp" href="https://wa.me/919922645580" target="_blank">
+Chat on WhatsApp
+</a>
+
+</body>
+</html>
